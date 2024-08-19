@@ -328,7 +328,7 @@ body{
 .calculator-up{
     width: 100%;
     height: 33%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -359,7 +359,8 @@ body{
 .calc-chart{
     width: 30%;
     height: 80%;
-    border: 1px solid slateblue;
+    margin-left: 50px;
+    /* border: 1px solid slateblue; */
 }
 .chart-title{
     font-family: "Inter", sans-serif;
@@ -368,10 +369,38 @@ body{
     color: rgb(255, 255, 255);
     letter-spacing: 1.3px;
 }
+.chart-table{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.chart-table th{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.chart-table td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.chart-table, td, th {  
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+th,td{
+    padding: 15px 5px;
+}
 .calc-form{
     width: 30%;
     height: 80%;
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
+}
+.bmi{
+    /* border: 1px solid brown; */
+    width: 90%;
 }
 .form-title{
     font-family: "Inter", sans-serif;
@@ -386,7 +415,60 @@ body{
     font-size: 0.8rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    line-height: 30px;
+    line-height: 20px;
+}
+.bmi-form{
+    margin-top: 40px;
+	/* background: rgba(255, 255, 255, 0.1); */
+    /* padding: 12px 40px; */
+    justify-content: flex-start;
+    gap: 20px;
+}
+.bmi-form input{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 14px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.bmi-form::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.bmi-form input[type="text"]{
+    color: rgb(255, 255, 255);
+}
+.bmi-gender{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 46px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-gender option{
+    color: black;
+    background-color: black;
+}
+.bmi-gender>option{
+    background: rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+.bmi-activity{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 142px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-activity option{
+    text-align: left;
 }
 @media screen and (max-width: 576px) {
     .banner-content,
@@ -394,7 +476,9 @@ body{
     .habit-info,
     .habit-title,
     .running-content,
-    .running-info
+    .running-info,
+    .calc-table,
+    .bmi-form
     {
         flex-direction: column;
     }
@@ -512,5 +596,45 @@ body{
     }
     .running-img{
         width: 80%;
+    }
+    .calc-title{
+        font-size: 2rem;
+        margin-left: 0px;
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+    .calc-subtitle{
+        width: 80%;
+    }
+    .calc-table{
+        height: 800px;
+        /* border: 1px solid yellow; */
+    }
+    .calc-chart{
+        /* border: 1px solid red; */
+        width: 80%;
+        margin-left: 0px;
+    }
+    .chart-table{
+        width: 100%;
+    }
+    .calc-form{
+        /* border: 1px solid green; */
+        width: 80%;
+    }
+    .bmi{
+        width: 100%;
+        /* border: 1px solid slateblue; */
+    }
+    .bmi-form{
+        width: 100%;
+    }
+    .chart-title{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .form-title{
+        font-size: 1.5rem;
+        margin-top: 50px;
     }
 }
