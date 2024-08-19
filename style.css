@@ -1,161 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* background: black; */
 }
-
+body{
+    background: black;
+}
+.hide{
+    display: none;
+}
 .whole-flex{
     display: flex;
 }
 .primary-btn{
-    background-color: tomato;
-    padding: 20px 30px;
-    border-radius: 100px;
+    background-color: rgb(230, 83, 60);
+    padding: 16px 40px;
+    border-radius: 42px;
     border: none;
-    color: aliceblue;
-    font-size: 1.4rem;
-    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
 }
 .secondary-btn{
-    padding: 20px 30px;
-    border-radius: 100px;
-    border: 1px solid white;
-    color: white;
-    background-color: black;
-    font-size: 1.4rem;
+    padding: 16px 40px;
+    border-radius: 42px;
+    border: 1px solid rgb(255, 255, 255);
+    background: black;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
 }
 .banner{
-    max-width: 100%;
-    /* height: 900px; */
-    border: 3px solid black;
-    background-color: black;
+    width: 100%;
+    /* margin-left: 40px; */
+    /* border: 3px solid green; */
+    background: linear-gradient(180deg, hsla(0, 0%, 15%, 0.9) 10%, hsla(0, 0%, 20%, 0) 100%);
 }
 .navbar{
-    margin-top: 40px;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
+    /* border: 1px solid yellow; */
+    padding-top: 40px;
 }
 .navbar-logo{
-    font-size: 3rem;
-    color: white;
+    color: rgb(230, 83, 60);
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: left;
+    font-style: italic;
 }
 .navbar-item{
+    /* width: 450px; */
     list-style: none;
-    font-size: 1.5rem;
-    border: 2px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    border-radius: 40px;
-    padding: 10px 0px;
-}
-.navbar-item-list:hover{
-    background-color: tomato;
-    border-radius: 40px;
-    padding: 10px 20px;
+    gap: 47px;
+    padding: 10px;
 }
 .navbar-item-list{
-    margin-left: 2px;
-    margin-right: 5px;
-    /* list-style: none; */
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    /* margin-right: 5px; */
+}
+.basha{
+    background-color: rgb(230, 83, 60);
+    border-radius: 46px;
+    padding: 8px 20px 8px 20px;
 }
 .navbar-item a{
     text-decoration: none;
-    /* color: black; */
-    color: white;
-
+    color: rgb(255, 255, 255);
+}
+.hamburger{
+    /* color: rgb(255, 255, 255); */
+    display: none;
+    /* border: 1px solid red; */
 }
 .banner-content{
     width: 80%;
-    height: 80%;
+    font-family: "Inter", sans-serif;
     margin: 0 auto;
     /* border: 5px solid slateblue; */
     margin-top: 80px;
     justify-content: space-around;
     align-items: center;
+    gap: 100px;
 }
 .banner-info{
-    width: 800px;
-    height: 500px;
+    width: 50%;
     /* border: 2px solid red; */
-    /* margin-top: 100px; */
-    margin-right: 50px;
+    /* margin-right: 50px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
 }
 .banner-info-title{
-    font-size: 4rem;
-    padding-left: 20px;
-    color: white;
+    font-size: 4.8rem;
+    /* padding-left: 20px; */
+    color: rgb(255, 255, 255);
 }
 #shape{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: tomato;
+    font-family: 'Miama', sans-serif;
+    font-size: 4.8rem;
+    font-weight: 400;
 }
 .banner-info-subtitle{
-    font-size: 1.3rem;
+    font-size: 1rem;
+    font-weight: 400;
     margin-top: -30px;
     line-height: 30px;
-    padding-left: 20px;
-    color: gray;
+    /* padding-left: 20px; */
+    color: rgba(255, 255, 255, 0.5);
 }
 .banner-btn{
     /* border: 2px solid yellow; */
     width: 100%;
     justify-content: space-evenly;
-    background-color: black;
 }
 .banner-img{
-    width: 800px;
+    width: 50%;
     height: 500px;
     /* border: 2px solid red; */
     background-image: url(images/Images\ 2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-left: 100px;
-    /* object-fit: contain; */
     position: relative;
 }
 .video-tutorial{
-    padding: 20px 0px;
-    color: white;
-    /* border: 1px solid saddlebrown; */
-    width: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 18px 22px;
+    color: rgb(255, 255, 255);
     text-align: center;
-    /* line-height: 30px; */
     position: absolute;
     top: 360px;
-    left: 100px;
+    left: 50px;
     z-index: 1;
-    border-radius: 20px;
     justify-content: space-around;
-    background-color: gray;
-    opacity: 0.6;
 }
 .num-vt{
-    font-size: 2.3rem;
-    color: white;
-    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
 }
-
-.info-vt{
-    width: 100px;
-    /* height: 70px; */
-    /* border: 2px solid white; */
-    margin-top: -10px;
+.info-vt h5{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
 }
 .info-vt h5{
     font-size: 0.9rem;
+    font-weight: 400;
 }
 #circle{
-    background-color: tomato;
+    background-color: rgb(230, 83, 60);
     border-radius: 50px;
     width: 40px;
     height: 40px;
@@ -163,55 +177,61 @@
     margin-left: 10px;
 }
 .free-workout{
-    padding: 20px 10px;
-    color: white;
-    /* border: 1px solid saddlebrown; */
-    width: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 20px 24px;
+    color: rgb(255, 255, 255);
     text-align: center;
-    /* line-height: 30px; */
     position: absolute;
     top: 140px;
-    left: 370px;
+    left: 380px;
     z-index: 1;
     border-radius: 20px;
     flex-direction: column;
     gap: 10px;
-    /* justify-content: flex-start; */
-    align-items: flex-start;
-    background-color: gray;
-    opacity: 0.6;
+}
+.free-workout .num-vt{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.free-workout h5{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
 }
 
-.habit{
+/* .habit{
     width: 80%;
     border: 2px solid black;
     margin: 30px auto;
     background-color: black;
     color: white;
-}
-.habit-title{
+} */
+/* .habit-title{
     width: 80%;
     margin: 0 auto;
-    /* border: 2px solid green; */
+    border: 2px solid green;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-.habit-title h3{
+} */
+/* .habit-title h3{
     font-size: 2.8rem;
     font-weight: 700;
-}
-.habit-title p{
+} */
+/* .habit-title p{
     width: 60%;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     font-size: 1.2rem;
     text-align: center;
-}
-.habit-info{
+} */
+/* .habit-info{
     width: 100%;
     margin: 40px auto;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     justify-content: space-around;
     align-items: center;
     gap: 10px;
@@ -219,12 +239,12 @@
 .habit-card{
     width: 25%;
     height: 350px;
-    /* border: 2px solid brown; */
-}
-.habit-img{
+    border: 2px solid brown;
+} */
+/* .habit-img{
     width: 100%;
     height: 200px;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     border-radius: 50px;
     background-image: url(images/image\ 3.png);
     background-repeat: no-repeat;
@@ -234,17 +254,17 @@
 .habit-img2{
     width: 100%;
     height: 200px;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     border-radius: 50px;
     background-image: url(images/image\ 2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
-.habit-img3{
+} */
+/* .habit-img3{
     width: 100%;
     height: 200px;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     border-radius: 50px;
     background-image: url(images/image\ 4.png);
     background-repeat: no-repeat;
@@ -254,17 +274,17 @@
 .habit-img4{
     width: 100%;
     height: 200px;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     border-radius: 50px;
     background-image: url(images/image\ 5.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
-.habit-card-title{
+} */
+/* .habit-card-title{
     width: 100%;
     height: 150px;
-    /* border: 2px solid black; */
+    border: 2px solid black;
 }
 .habit-card-title h3{
     text-align: center;
@@ -274,12 +294,11 @@
 .habit-card-title p{
     width: 70%;
     text-align: center;
-    /* border: 1px solid tomato; */
+    border: 1px solid tomato;
     margin: 20px auto;
     font-size: 1.2rem;
-}
+} */
 @media screen and (max-width: 576px) {
-    .navbar,
     .banner-content,
     .banner-info,
     .habit-info,
@@ -287,16 +306,55 @@
     {
         flex-direction: column;
     }
-    .navbar{
-        justify-content: center;
+    .banner{
         width: 100%;
+        margin-right: 0px;
+        /* border: 2px solid wheat; */
+    }
+    .navbar{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .navbar-logo{
+        margin-left: -40px;
     }
     .navbar-item{
-        font-size: 1rem;
-        margin-top: 20px;
+        display: none;
     }
-    .banner{
-        /* border: 3px solid green; */
+    .hamburger{
+        color: rgb(255, 255, 255);
+        display: block;
+        /* border: 1px solid red; */
+    }
+   
+    .banner-content{
+        gap: 30px;
+        /* border: 2px solid red; */
+    }
+    .banner-info{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 2px solid blue; */
+    }
+    .banner-img{
+        width: 100%;
+        /* border: 2px solid saddlebrown; */
+    }
+    .banner-info-title{
+        padding: 0px;
+        width: 100%;
+        font-size: 2.5rem;
+        /* border: 1px solid yellow; */
+    }
+    #shape{
+        font-size: 2.25rem;
+    }
+    .banner-info-subtitle{
+        /* border: 1px solid yellow; */
+        font-size: 1rem;
+        padding-left: 0px;
+        text-align: justify;
+        width: 100%;
     }
     .banner-btn{
         width: 100%;
@@ -304,65 +362,40 @@
         /* border: 1px solid slateblue; */
         gap: 50px;
     }
-    .banner-content{
-        /* border: 2px solid red; */
-    }
-    .banner-info{
-        width: 100%;
-        height: 20%;
-        /* margin-right: -400px; */
-        /* border: 2px solid blue; */
-    }
-    .banner-img{
-        width: 100%;
-        /* border: 2px solid saddlebrown; */
-        margin-left: 20px;
-    }
-    .banner-info-title{
-        padding: 0px;
-        width: 380px;
-    }
-    .banner-info-subtitle{
-        font-size: 1rem;
-        padding-left: 0px;
-        text-align: justify;
-        width: 100%;
-        /* border: 2px solid blueviolet; */
-    }
     .primary-btn{
-        width: 100px;
-        height: 50px;
-        border-radius: 50px;
-        padding: 4px 8px;
-        font-size: 1rem;
+        border-radius: 42px;
+        padding: 6px 30px;
+        font-size: 1.125rem;
+        color: rgb(255, 255, 255);        
+        font-weight: 600;
     }
     .secondary-btn{
-        width: 100px;
-        height: 50px;
-        border-radius: 50px;
-        padding: 4px 8px;
-        font-size: 1rem;
+        border-radius: 42px;
+        padding: 6px 20px;
+        font-size: 1.125rem;
     }
     .video-tutorial{
-        left: -40px;
+        padding: 10px 18px;
+        left: -20px;
     }
     .free-workout{
         left: 150px;
+        padding: 10px 18px;
     }
-    .habit-title{
-        /* border: 2px solid black; */
+    /* .habit-title{
+        border: 2px solid black;
         width: 100%;
     }
     .habit-title h3{
-        /* border: 1px solid red; */
+        border: 1px solid red;
         text-align: center;
     }
     .habit-title p{
-        /* border: 2px solid slateblue; */
+        border: 2px solid slateblue;
         width: 100%;
     }
     .habit-card{
         width: 100%;
-        /* border: 2px solid slateblue; */
-    }
+        border: 2px solid slateblue;
+    } */
 }
