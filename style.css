@@ -422,8 +422,10 @@ body{
     }
     .running-content{
         width: 90%;
+        height: 650px;
         justify-content: flex-start;
         gap: 40px;
+        /* border: 1px solid white; */
     }
     .running-info{
         /* border: 1px solid green; */
