@@ -322,12 +322,13 @@ body{
 }
 .calculator{
     width: 100%;
-    height: 700px;
-    /* border: 1px solid red; */
+    /* height: 800px; */
+    /* border: 5px solid red; */
 }
 .calculator-up{
     width: 100%;
     height: 33%;
+    margin-bottom: 50px;
     /* border: 1px solid green; */
     flex-direction: column;
     justify-content: center;
@@ -350,11 +351,12 @@ body{
 }
 .calc-table{
     width: 100%;
-    height: 67%;
+    height: 500px;
     background-color: rgb(34, 34, 34);
     justify-content: space-evenly;
     align-items: center;
     gap: 10px;
+    /* border: 2px solid firebrick; */
 }
 .calc-chart{
     width: 30%;
@@ -469,6 +471,79 @@ th,td{
 }
 .bmi-activity option{
     text-align: left;
+}
+.team{
+    width: 100%;
+    /* height: 800px; */
+    margin-top: 40px;
+    /* border: 3px solid saddlebrown; */
+}
+.team-info{
+    width: 100%;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.team-title{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.team-subtitle{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.team-member{
+    width: 60%;
+    height: 80%;
+    border-radius: 18px;
+    /* border: 1px solid pink; */
+    background: rgba(255, 255, 255, 0.1);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.member-card{
+    position: relative;
+    /* border: 1px solid slateblue; */
+    display: grid;
+    gap: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 18px;
+    
+}
+.member-card-img{
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid green; */
+    border-radius: 18px;
+    object-fit: cover;
+    object-position: center;
+}
+.text-img-title{
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.text-img-sub{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width: 576px) {
     .banner-content,
@@ -607,7 +682,9 @@ th,td{
         width: 80%;
     }
     .calc-table{
-        height: 800px;
+        height: 900px;
+        padding-bottom: 30px;
+        /* gap: 5px; */
         /* border: 1px solid yellow; */
     }
     .calc-chart{
@@ -619,8 +696,10 @@ th,td{
         width: 100%;
     }
     .calc-form{
-        /* border: 1px solid green; */
+        border: 1px solid green;
         width: 80%;
+        margin-top: -70px;
+        
     }
     .bmi{
         width: 100%;
@@ -636,5 +715,11 @@ th,td{
     .form-title{
         font-size: 1.5rem;
         margin-top: 50px;
+    }
+    .team-subtitle{
+        text-align: center;
+    }
+    .team-member{
+        grid-template-columns: repeat(1,1fr);
     }
 }
